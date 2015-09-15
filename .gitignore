@@ -1,0 +1,28 @@
+﻿# dev stuff
+.tmp
+.sass-cache
+.idea
+
+*.bak
+*.log
+*.iml
+
+# dependencies
+bower_components
+node_modules
+
+# windows stuff
+*.exe
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# lest you forget
+*.zip
+*.rar
+*.tar*
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar

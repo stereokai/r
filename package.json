@@ -1,0 +1,19 @@
+{
+  "name": "ruttanun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flexbox": "0.0.3"
+  },
+  "devDependencies": {
+    "bs-html-injector": "^2.0.4",
+    "which": "^1.1.1"
+  }
+}
