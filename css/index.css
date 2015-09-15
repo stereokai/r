@@ -1388,6 +1388,16 @@ h2 {
   left: .5rem;
 }
 
+.square > .content > img {
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  min-width: 100%;
+  max-width: 120%;
+  min-height: 100%;
+}
+
 .square > .shadow.--on-right:after {
   z-index: -1; 
   position: absolute; 
@@ -1430,26 +1440,11 @@ h2 {
 }
 
 .crossfade > img {
-  transform: translateY(-50%);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
   color: transparent;
   opacity: 0;
   backface-visibility: hidden;
   animation: imageAnimation 24s linear infinite 0s; 
 }
-
-.crossfade.two-images   > img { animation-duration: 12s; }
-.crossfade.three-images > img { animation-duration: 18s; }
-.crossfade.four-images  > img { animation-duration: 24s; }
-.crossfade.five-images  > img { animation-duration: 30s; }
-.crossfade.six-images   > img { animation-duration: 36s; }
-.crossfade.seven-images > img { animation-duration: 42s; }
-.crossfade.eight-images > img { animation-duration: 48s; }
-.crossfade.nine-images  > img { animation-duration: 54s; }
-.crossfade.ten-images   > img { animation-duration: 60s; }
 
 .crossfade > img:nth-child(1) {
     -webkit-animation-delay: 0s;
