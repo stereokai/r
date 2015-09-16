@@ -257,6 +257,7 @@ code {
 }
 
 .page-section {
+  width: 100%;
   padding: 1.5rem 2rem;
   margin-right: auto;
   margin-left: auto;
@@ -1475,6 +1476,30 @@ h2 {
 
 .sidebar {
   width: 320px;
+  padding: 1rem 2rem;
   flex-shrink: 0;
   background: #fff;
+}
+
+.dia > img {
+  width: 100%;
+}
+
+.dia > h4 {
+  margin-top: -10px;
+}
+
+.contact li {
+  margin-bottom: 8px;
+  color: #007FFF;
+  font-weight: 700;
+}
+
+.contact span {
+  font-weight: 400;
+  color: #000;
+}
+
+.contact a {
+  text-decoration: underline;
 }
