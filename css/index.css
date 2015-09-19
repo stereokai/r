@@ -192,7 +192,7 @@ body {
   font-size: 18px;
   font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
-  background: #EEE;
+  background: #EEF3F2;
   line-height: 1.4rem
 }
 h1,
@@ -256,6 +256,14 @@ code {
 
 .content {
   display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1280px) {
+  .content {
+    max-width: 1366px;
+  }
 }
 
 .page-section {
@@ -1376,7 +1384,7 @@ h1 {
   h1 { background-image: url('/images/cover_tablet.jpg'); }
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1024px) {
   h1 { background-image: url('/images/cover.jpg'); }
 }
 
@@ -1531,15 +1539,21 @@ body.--sidebar-open {
     width: 100%;
     z-index: 9000;
     overflow-y: scroll;
-
+  
+    transition: transform 600ms ease-in;
 }
 
 @media only screen and (min-width: 768px) {
   #sidebar {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #sidebar {
     position: initial;
     top: initial;
     left: initial;
-    width: 320px;
     z-index: initial;
     overflow-y: initial;
     height: initial;
@@ -1548,6 +1562,7 @@ body.--sidebar-open {
 
 #sidebar.--open {
   transform: translateX(-100%);
+  transition: transform 400ms ease-out;
 }
 
 #sb-close, #sb-open {
@@ -1563,9 +1578,10 @@ body.--sidebar-open {
   display: none;
   z-index: 999999999;
   background: none;
+  transition: transform 300ms ease-in;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1279px) {
   #sb-close, #sb-open {
     display: block;
   }
@@ -1586,7 +1602,7 @@ body.--sidebar-open {
 }
 
 #sb-close {
-  transform: translate(-50%, -50%) rotate(360deg) scaleX(-1);
+  transform: translate(-100%, -50%) rotate(360deg) scaleX(-1);
   left: 0%;
 }
 
@@ -1598,8 +1614,12 @@ body.--sidebar-open {
   left: 40px;
 }
 
-@media only screen and (min-width: 768px) {
-  display: block;
+body.--sidebar-open #sb-open {
+  transform: translate(0%, -50%) rotate(360deg);
+}
+
+body.--sidebar-open #sb-close {
+  transform: translate(-50%, -50%) rotate(360deg) scaleX(-1);
 }
 
 .dia > img {
