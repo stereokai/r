@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"side",
+				"sidebar"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"tra",
+				"translateY(-47	(index.html)"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"translate",
+				"translateY(-47	(index.html)"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"tran",
+				"translateY	(index.css)"
+			],
+			[
+				"new",
+				"newClient	(session.js)"
+			],
+			[
+				"sess",
+				"sessionId"
+			],
+			[
+				"home",
+				"homeAddress"
+			],
+			[
+				"crea",
+				"createdAt"
+			],
+			[
+				"exp",
+				"exports	(index.js)"
+			],
+			[
+				"ses",
+				"sessionstore.json"
+			],
+			[
+				"body",
+				"bodyParser"
+			],
+			[
 				"rel",
 				"relative"
 			],
@@ -22,10 +78,6 @@
 			[
 				"doc",
 				"document	(index.html)"
-			],
-			[
-				"tran",
-				"translate"
 			],
 			[
 				"old",
@@ -230,7 +282,23 @@
 			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 68,
+				"buffer_size": 1309,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Tom/Dev/smashing-input-events/taps.js",
+			"settings":
+			{
+				"buffer_size": 807,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Tom/Dev/smashing-input-events/taps.html",
+			"settings":
+			{
+				"buffer_size": 1280,
 				"line_ending": "Windows"
 			}
 		},
@@ -246,26 +314,25 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3869,
+				"buffer_size": 11183,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "1st thing should be coconut oil - picture on right\n2nd coconut farm \"sell coconut in bulk\" - picture on left\n3rd truck - picture on right\n4 car for rent - picture on left\n5 laundry - picture on right",
+			"settings":
+			{
+				"buffer_size": 199,
+				"line_ending": "Windows",
+				"name": "1st thing should be coconut oil - picture on right"
 			}
 		},
 		{
 			"file": "css/index.css",
 			"settings":
 			{
-				"buffer_size": 27440,
+				"buffer_size": 29584,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nBabel:\n-----\n\n  babel-sublime\n  -------------\n  \n  If you're on the Sublime Text 3 dev channel and using the latest Sublime\n  build, you should now see substantially improved JSX matching:\n  \n    1. A few lingering edge-cases w.r.t. JSXText have been fixed.\n  \n    2. JSX matching won't interfere with Flow annotations. This is a huge step\n       towards full Flow support. Before, some Flow arrays got matched as JSX\n       and that made a mess. Now, they won't get matched, and at worst it just\n       looks plain.\n  \n  That's it.\n  \n  ",
-			"settings":
-			{
-				"buffer_size": 589,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
 			}
 		},
 		{
@@ -277,23 +344,6 @@
 			}
 		},
 		{
-			"contents": "@caspervonb I got you covered bro.\n\n`chrome --version` flag/switch is not supported on Windows: https://code.google.com/p/chromium/issues/detail?id=158372\n\nBut when there's a will, there's a way. The version number is stored in the registry in the uninstall information. So we can query it via the command line, as per the example in the above link:\n\n`reg query \"HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Google Chrome\" /v DisplayVersion`\n\nHowever, this did not work for me. The reason being - the key does not exist. My immediate assumption was that in the 2 years since this idea was suggested, Google has released the 64bit version of Chrome, so, a registry scour was in order. Eventually I have found my target:\n\n`reg query \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Google Chrome\" /v DisplayVersion`\n\nWhich outputs:\n```\nDisplayVersion    REG_SZ    44.0.2403.125\n```\n\nWhich you can parse with a regex to get the version number. To strike out all possible fail points, I suggest you check the original 32bit query on a 32bit Chrome installatation - and in your code, you could try one and if it fails, try the other. They are bound to succeed, because this information must be in the registry - unless someone is using Chrome in a hackish portable way, and I don't even know if that is even possible or something you should care about.",
-			"settings":
-			{
-				"buffer_size": 1407,
-				"line_ending": "Windows",
-				"name": "@caspervonb I got you covered bro."
-			}
-		},
-		{
-			"file": "node_modules/bs-html-injector/index.js",
-			"settings":
-			{
-				"buffer_size": 6482,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "package.json",
 			"settings":
 			{
@@ -302,21 +352,26 @@
 			}
 		},
 		{
-			"contents": "<!DOCTYPE HTML>\n<html>\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>Ruttunun Samui Coconut Oil</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  </head>\n  <body class=\"layout\">\n    <div class=\"page js-page\">\n      <header>\n      </header>\n      <div class=\"wrap container-fluid\">\n        <a name=\"responsive\"></a>\n        <section class=\"page-section\">\n          <h2>Responsive</h2>\n          <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs,\n            sm, md &amp; lg viewport widths.\n          </p>\n          <div class=\"row\">\n            <div class=\"col-xs-12 col-sm-3 col-md-2 col-lg-1\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-6 col-sm-6 col-md-8 col-lg-10\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-6 col-sm-3 col-md-2 col-lg-1\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-12 col-sm-3 col-md-2 col-lg-1\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-12 col-sm-9 col-md-10 col-lg-11\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-10 col-sm-6 col-md-8 col-lg-10\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-2 col-sm-6 col-md-4 col-lg-2\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n        </section>\n        <a name=\"fluid\"></a>\n        <section class=\"page-section\">\n          <br>\n          <h2>Fluid</h2>\n          <p>Percent based widths allow fluid resizing of columns and rows.</p>\n          <div class=\"row\">\n            <div class=\"col-xs-12\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-1\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-11\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-2\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-10\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-3\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-9\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-4\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-8\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-5\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-7\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-6\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs-6\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n        </section>\n        <a name=\"syntax\"></a>\n        <section class=\"page-section\">\n          <h2>Simple Syntax</h2>\n          <p>All you need to remember is row, column, content.</p>\n        </section>\n        <a name=\"offsets\"></a>\n        <section class=\"page-section\">\n          <h2>Offsets</h2>\n          <p>Offset a column</p>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-11 col-xs-1\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-10 col-xs-2\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-9 col-xs-3\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-8 col-xs-4\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-7 col-xs-5\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-6 col-xs-6\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-5 col-xs-7\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-4 col-xs-8\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-3 col-xs-9\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-2 col-xs-10\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs-offset-1 col-xs-11\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n        </section>\n        <a name=\"auto\"></a>\n        <section class=\"page-section\">\n          <h2>Auto Width</h2>\n          <p>Add any number of auto sizing columns to a row. Let the grid figure it out.</p>\n          <div\n            class=\"row\">\n            <div class=\"col-xs\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-xs\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs\">\n              <div class=\"box-row\"></div>\n            </div>\n            <div class=\"col-xs\">\n              <div class=\"box-row\"></div>\n            </div>\n          </div>\n        </section>\n        <footer class=\"page-footer\">\n          <div class=\"row\">\n            <div class=\"col-xs start\"> <a class=\"tag\" href=\"http://twitter.com/dam\">\n              @dam ♡s you\n              </a>\n            </div>\n            <div class=\"col-xs end\"> <a class=\"link-top\" href=\"#top\">⇪ back to top</a>\n            </div>\n          </div>\n        </footer>\n      </div>\n    </div>\n    <script>\n      (function() {\n        document.addEventListener('DOMContentLoaded', function(e) {\n          var code = document.createElement('script');\n          code.src = 'js/index.js';\n          var script = document.getElementsByTagName('script')[0];\n          script.parentNode.insertBefore(code, script);\n        });\n      }());\n    </script>\n    <script src=\"//localhost:35729/livereload.js\"></script>\n  </body>\n</html>",
-			"file": "src/index.html",
-			"file_size": 7335,
-			"file_write_time": 130822929075915510,
+			"contents": "/* See also:\n    http://www.html5rocks.com/en/tutorials/webrtc/basics/\n    https://code.google.com/p/webrtc-samples/source/browse/trunk/apprtc/index.html\n\n    https://webrtc-demos.appspot.com/html/pc1.html\n*/\n\nvar cfg = {\"iceServers\":[{\"url\":\"stun:23.21.150.121\"}]},\n    con = { 'optional': [{'DtlsSrtpKeyAgreement': true}] };\n\n/* THIS IS ALICE, THE CALLER/SENDER */\n\nvar pc1 = new RTCPeerConnection(cfg, con),\n    dc1 = null, tn1 = null;\n\n// Since the same JS file contains code for both sides of the connection,\n// activedc tracks which of the two possible datachannel variables we're using.\nvar activedc;\n\nvar pc1icedone = false;\n\n$('#showLocalOffer').modal('hide');\n$('#getRemoteAnswer').modal('hide');\n$('#waitForConnection').modal('hide');\n$('#createOrJoin').modal('show');\n\n$('#createBtn').click(function() {\n    $('#showLocalOffer').modal('show');\n    createLocalOffer();\n});\n\n$('#joinBtn').click(function() {\n    $('#getRemoteOffer').modal('show');\n});\n\n$('#offerSentBtn').click(function() {\n    $('#getRemoteAnswer').modal('show');\n});\n\n$('#offerRecdBtn').click(function() {\n    var offer = $('#remoteOffer').val();\n    var offerDesc = new RTCSessionDescription(JSON.parse(offer));\n    console.log(\"Received remote offer\", offerDesc);\n    writeToChatLog(\"Received remote offer\", \"text-success\");\n    handleOfferFromPC1(offerDesc);\n    $('#showLocalAnswer').modal('show');\n});\n\n$('#answerSentBtn').click(function() {\n    $('#waitForConnection').modal('show');\n});\n\n$('#answerRecdBtn').click(function() {\n    var answer = $('#remoteAnswer').val();\n    var answerDesc = new RTCSessionDescription(JSON.parse(answer));\n    handleAnswerFromPC2(answerDesc);\n    $('#waitForConnection').modal('show');\n});\n\n$('#fileBtn').change(function() {\n    var file = this.files[0];\n    console.log(file);\n\n    sendFile(file);\n});\n\nfunction fileSent(file) {\n    console.log(file + \" sent\");\n}\n\nfunction fileProgress(file) {\n    console.log(file + \" progress\");\n}\n\nfunction sendFile(data) {\n    if (data.size) {\n        FileSender.send({\n          file: data,\n          onFileSent: fileSent,\n          onFileProgress: fileProgress,\n        });\n    }\n}\n\nfunction sendMessage() {\n    if ($('#messageTextBox').val()) {\n        var channel = new RTCMultiSession();\n        writeToChatLog($('#messageTextBox').val(), \"text-success\");\n        channel.send({message: $('#messageTextBox').val()});\n        $('#messageTextBox').val(\"\");\n\n        // Scroll chat text area to the bottom on new input.\n        $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);\n    }\n\n    return false;\n};\n\nfunction setupDC1() {\n    try {\n        var fileReceiver1 = new FileReceiver();\n        dc1 = pc1.createDataChannel('test', {reliable:true});\n        activedc = dc1;\n        console.log(\"Created datachannel (pc1)\");\n        dc1.onopen = function (e) {\n            console.log('data channel connect');\n            $('#waitForConnection').modal('hide');\n            $('#waitForConnection').remove();\n        }\n        dc1.onmessage = function (e) {\n            console.log(\"Got message (pc1)\", e.data);\n            if (e.data.size) {\n                fileReceiver1.receive(e.data, {});\n            }\n            else {\n                if (e.data.charCodeAt(0) == 2) {\n                   // The first message we get from Firefox (but not Chrome)\n                   // is literal ASCII 2 and I don't understand why -- if we\n                   // leave it in, JSON.parse() will barf.\n                   return;\n                }\n                console.log(e);\n                var data = JSON.parse(e.data);\n                if (data.type === 'file') {\n                    fileReceiver1.receive(e.data, {});\n                }\n                else {\n                    writeToChatLog(data.message, \"text-info\");\n                    // Scroll chat text area to the bottom on new input.\n                    $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);\n                }\n            }\n        };\n    } catch (e) { console.warn(\"No data channel (pc1)\", e); }\n}\n\nfunction createLocalOffer() {\n    setupDC1();\n    pc1.createOffer(function (desc) {\n        pc1.setLocalDescription(desc, function () {}, function () {});\n        console.log(\"created local offer\", desc);\n    }, function () {console.warn(\"Couldn't create offer\");});\n}\n\npc1.onicecandidate = function (e) {\n    console.log(\"ICE candidate (pc1)\", e);\n    if (e.candidate == null) {\n        $('#localOffer').html(JSON.stringify(pc1.localDescription));\n    }\n};\n\nfunction handleOnconnection() {\n    console.log(\"Datachannel connected\");\n    writeToChatLog(\"Datachannel connected\", \"text-success\");\n    $('#waitForConnection').modal('hide');\n    // If we didn't call remove() here, there would be a race on pc2:\n    //   - first onconnection() hides the dialog, then someone clicks\n    //     on answerSentBtn which shows it, and it stays shown forever.\n    $('#waitForConnection').remove();\n    $('#showLocalAnswer').modal('hide');\n    $('#messageTextBox').focus();\n}\n\npc1.onconnection = handleOnconnection;\n\nfunction onsignalingstatechange(state) {\n    console.info('signaling state change:', state);\n}\n\nfunction oniceconnectionstatechange(state) {\n    console.info('ice connection state change:', state);\n}\n\nfunction onicegatheringstatechange(state) {\n    console.info('ice gathering state change:', state);\n}\n\npc1.onsignalingstatechange = onsignalingstatechange;\npc1.oniceconnectionstatechange = oniceconnectionstatechange;\npc1.onicegatheringstatechange = onicegatheringstatechange;\n\nfunction handleAnswerFromPC2(answerDesc) {\n    console.log(\"Received remote answer: \", answerDesc);\n    writeToChatLog(\"Received remote answer\", \"text-success\");\n    pc1.setRemoteDescription(answerDesc);\n}\n\nfunction handleCandidateFromPC2(iceCandidate) {\n    pc1.addIceCandidate(iceCandidate);\n}\n\n\n/* THIS IS BOB, THE ANSWERER/RECEIVER */\n\nvar pc2 = new RTCPeerConnection(cfg, con),\n    dc2 = null;\n\nvar pc2icedone = false;\n\npc2.ondatachannel = function (e) {\n    var fileReceiver2 = new FileReceiver();\n    var datachannel = e.channel || e; // Chrome sends event, FF sends raw channel\n    console.log(\"Received datachannel (pc2)\", arguments);\n    dc2 = datachannel;\n    activedc = dc2;\n    dc2.onopen = function (e) {\n        console.log('data channel connect');\n        $('#waitForConnection').modal('hide');\n        $('#waitForConnection').remove();\n    }\n    dc2.onmessage = function (e) {\n        console.log(\"Got message (pc2)\", e.data);\n        if (e.data.size) {\n            fileReceiver2.receive(e.data, {});\n        }\n        else {\n            var data = JSON.parse(e.data);\n            if (data.type === 'file') {\n                fileReceiver2.receive(e.data, {});\n            }\n            else {\n                writeToChatLog(data.message, \"text-info\");\n                // Scroll chat text area to the bottom on new input.\n                $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);\n            }\n        }\n    };\n};\n\nfunction handleOfferFromPC1(offerDesc) {\n    pc2.setRemoteDescription(offerDesc);\n    pc2.createAnswer(function (answerDesc) {\n        writeToChatLog(\"Created local answer\", \"text-success\");\n        console.log(\"Created local answer: \", answerDesc);\n        pc2.setLocalDescription(answerDesc);\n    }, function () { console.warn(\"No create answer\"); });\n}\n\npc2.onicecandidate = function (e) {\n    console.log(\"ICE candidate (pc2)\", e);\n    if (e.candidate == null)\n       $('#localAnswer').html(JSON.stringify(pc2.localDescription));\n};\n\npc2.onsignalingstatechange = onsignalingstatechange;\npc2.oniceconnectionstatechange = oniceconnectionstatechange;\npc2.onicegatheringstatechange = onicegatheringstatechange;\n\nfunction handleCandidateFromPC1(iceCandidate) {\n    pc2.addIceCandidate(iceCandidate);\n}\n\npc2.onaddstream = function (e) {\n    console.log(\"Got remote stream\", e);\n    var el = new Audio();\n    el.autoplay = true;\n    attachMediaStream(el, e.stream);\n};\n\npc2.onconnection = handleOnconnection;\n\nfunction getTimestamp() {\n    var totalSec = new Date().getTime() / 1000;\n    var hours = parseInt(totalSec / 3600) % 24;\n    var minutes = parseInt(totalSec / 60) % 60;\n    var seconds = parseInt(totalSec % 60);\n\n    var result = (hours < 10 ? \"0\" + hours : hours) + \":\" +\n                 (minutes < 10 ? \"0\" + minutes : minutes) + \":\" +\n                 (seconds  < 10 ? \"0\" + seconds : seconds);\n\n    return result;\n}\n\nfunction writeToChatLog(message, message_type) {\n    document.getElementById('chatlog').innerHTML += '<p class=\\\"' + message_type + '\\\">' + \"[\" + getTimestamp() + \"] \" + message + '</p>';\n}",
 			"settings":
 			{
-				"buffer_size": 7111,
+				"buffer_size": 8581,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Tom/Dev/facebook-uploader/app/scripts/app.js",
+			"contents": "/* See also:\n    http://www.html5rocks.com/en/tutorials/webrtc/basics/\n    https://code.google.com/p/webrtc-samples/source/browse/trunk/apprtc/index.html\n\n    https://webrtc-demos.appspot.com/html/pc1.html\n*/\n\nvar cfg = {\"iceServers\":[{\"url\":\"stun:23.21.150.121\"}]},\n    con = { 'optional': [{'DtlsSrtpKeyAgreement': true}] };\n\n/* THIS IS ALICE, THE CALLER/SENDER */\n\nvar pc1 = new RTCPeerConnection(cfg, con),\n    dc1 = null, tn1 = null;\n\n// Since the same JS file contains code for both sides of the connection,\n// activedc tracks which of the two possible datachannel variables we're using.\nvar activedc;\n\nvar pc1icedone = false;\n\nvar qrFlow;\n\n$('#showLocalOffer').modal('hide');\n$('#getRemoteAnswer').modal('hide');\n$('#waitForConnection').modal('hide');\n$('#qrFlow').modal('hide');\n$('#createOrJoin').modal('show');\n\n$('#createBtn').click(function() {\n    if ($('#using-camera').prop('checked')) {\n        qrFlow = new QRFlow(true);\n    } else {\n        $('#showLocalOffer').modal('show');\n    }\n    createLocalOffer();\n});\n\n$('#joinBtn').click(function() {\n    if ($('#using-camera').prop('checked')) {\n        qrFlow = new QRFlow(false);\n    } else {\n        $('#getRemoteOffer').modal('show');\n    }\n});\n\n$('#offerSentBtn').click(function() {\n    $('#getRemoteAnswer').modal('show');\n});\n\nfunction handleJsonOfferFromPC1(offer) {\n    var offerDesc = new RTCSessionDescription(JSON.parse(offer));\n    handleOfferFromPC1(offerDesc);\n}\n\n$('#offerRecdBtn').click(function() {\n    var offer = $('#remoteOffer').val();\n    handleJsonOfferFromPC1(offer);\n    $('#showLocalAnswer').modal('show');\n});\n\n$('#answerSentBtn').click(function() {\n    $('#waitForConnection').modal('show');\n});\n\nfunction handleJsonAnswerFromPC2(answer) {\n    var answerDesc = new RTCSessionDescription(JSON.parse(answer));\n    handleAnswerFromPC2(answerDesc);\n}\n\n$('#answerRecdBtn').click(function() {\n    var answer = $('#remoteAnswer').val();\n    handleJsonAnswerFromPC2(answer);\n    $('#waitForConnection').modal('show');\n});\n\n$('#fileBtn').change(function() {\n    var file = this.files[0];\n    console.log(file);\n\n    sendFile(file);\n});\n\nfunction fileSent(file) {\n    console.log(file + \" sent\");\n}\n\nfunction fileProgress(file) {\n    console.log(file + \" progress\");\n}\n\nfunction sendFile(data) {\n    if (data.size) {\n        FileSender.send({\n          file: data,\n          onFileSent: fileSent,\n          onFileProgress: fileProgress,\n        });\n    }\n}\n\nfunction sendMessage() {\n    if ($('#messageTextBox').val()) {\n        var channel = new RTCMultiSession();\n        writeToChatLog($('#messageTextBox').val(), \"text-success\");\n        channel.send({message: $('#messageTextBox').val()});\n        $('#messageTextBox').val(\"\");\n\n        // Scroll chat text area to the bottom on new input.\n        $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);\n    }\n\n    return false;\n};\n\nfunction setupDC1() {\n    try {\n        var fileReceiver1 = new FileReceiver();\n        dc1 = pc1.createDataChannel('test', {reliable:true});\n        activedc = dc1;\n        console.log(\"Created datachannel (pc1)\");\n        dc1.onopen = function (e) {\n            console.log('data channel connect');\n            $('#waitForConnection').modal('hide');\n            $('#waitForConnection').remove();\n            if (qrFlow) {\n                qrFlow.remove();\n            }\n        }\n        dc1.onmessage = function (e) {\n            console.log(\"Got message (pc1)\", e.data);\n            if (e.data.size) {\n                fileReceiver1.receive(e.data, {});\n            }\n            else {\n                if (e.data.charCodeAt(0) == 2) {\n                   // The first message we get from Firefox (but not Chrome)\n                   // is literal ASCII 2 and I don't understand why -- if we\n                   // leave it in, JSON.parse() will barf.\n                   return;\n                }\n                console.log(e);\n                var data = JSON.parse(e.data);\n                if (data.type === 'file') {\n                    fileReceiver1.receive(e.data, {});\n                }\n                else {\n                    writeToChatLog(data.message, \"text-info\");\n                    // Scroll chat text area to the bottom on new input.\n                    $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);\n                }\n            }\n        };\n    } catch (e) { console.warn(\"No data channel (pc1)\", e); }\n}\n\nfunction createLocalOffer() {\n    setupDC1();\n    pc1.createOffer(function (desc) {\n        pc1.setLocalDescription(desc, function () {});\n        console.log(\"created local offer\", desc);\n    }, function () {console.warn(\"Couldn't create offer\");});\n}\n\npc1.onicecandidate = function (e) {\n    console.log(\"ICE candidate (pc1)\", e);\n    if (e.candidate == null) {\n        var s = JSON.stringify(pc1.localDescription);\n        if (qrFlow) {\n            qrFlow.showQRCodes(s);\n        } else {\n            $('#localOffer').html(s);\n        }\n    }\n};\n\nfunction handleOnconnection() {\n    console.log(\"Datachannel connected\");\n    writeToChatLog(\"Datachannel connected\", \"text-success\");\n    $('#waitForConnection').modal('hide');\n    // If we didn't call remove() here, there would be a race on pc2:\n    //   - first onconnection() hides the dialog, then someone clicks\n    //     on answerSentBtn which shows it, and it stays shown forever.\n    $('#waitForConnection').remove();\n    if (qrFlow) {\n        qrFlow.remove();\n    }\n    $('#showLocalAnswer').modal('hide');\n    $('#messageTextBox').focus();\n}\n\npc1.onconnection = handleOnconnection;\n\nfunction onsignalingstatechange(state) {\n    console.info('signaling state change:', state);\n}\n\nfunction oniceconnectionstatechange(state) {\n    console.info('ice connection state change:', state);\n}\n\nfunction onicegatheringstatechange(state) {\n    console.info('ice gathering state change:', state);\n}\n\npc1.onsignalingstatechange = onsignalingstatechange;\npc1.oniceconnectionstatechange = oniceconnectionstatechange;\npc1.onicegatheringstatechange = onicegatheringstatechange;\n\nfunction handleAnswerFromPC2(answerDesc) {\n    console.log(\"Received remote answer: \", answerDesc);\n    writeToChatLog(\"Received remote answer\", \"text-success\");\n    pc1.setRemoteDescription(answerDesc);\n}\n\n\n/* THIS IS BOB, THE ANSWERER/RECEIVER */\n\nvar pc2 = new RTCPeerConnection(cfg, con),\n    dc2 = null;\n\nvar pc2icedone = false;\n\npc2.ondatachannel = function (e) {\n    var fileReceiver2 = new FileReceiver();\n    var datachannel = e.channel || e; // Chrome sends event, FF sends raw channel\n    console.log(\"Received datachannel (pc2)\", arguments);\n    dc2 = datachannel;\n    activedc = dc2;\n    dc2.onopen = function (e) {\n        console.log('data channel connect');\n        $('#waitForConnection').remove();\n        if (qrFlow) {\n            qrFlow.remove();\n        }\n    }\n    dc2.onmessage = function (e) {\n        console.log(\"Got message (pc2)\", e.data);\n        if (e.data.size) {\n            fileReceiver2.receive(e.data, {});\n        }\n        else {\n            var data = JSON.parse(e.data);\n            if (data.type === 'file') {\n                fileReceiver2.receive(e.data, {});\n            }\n            else {\n                writeToChatLog(data.message, \"text-info\");\n                // Scroll chat text area to the bottom on new input.\n                $('#chatlog').scrollTop($('#chatlog')[0].scrollHeight);\n            }\n        }\n    };\n};\n\nfunction handleOfferFromPC1(offerDesc) {\n    console.log(\"Received remote offer\", offerDesc);\n    writeToChatLog(\"Received remote offer\", \"text-success\");\n    pc2.setRemoteDescription(offerDesc);\n    pc2.createAnswer(function (answerDesc) {\n        writeToChatLog(\"Created local answer\", \"text-success\");\n        console.log(\"Created local answer: \", answerDesc);\n        pc2.setLocalDescription(answerDesc);\n    }, function () { console.warn(\"No create answer\"); });\n}\n\npc2.onicecandidate = function (e) {\n    console.log(\"ICE candidate (pc2)\", e);\n    if (e.candidate == null) {\n        var s = JSON.stringify(pc2.localDescription);\n        if (qrFlow) {\n            qrFlow.showQRCodes(s);\n        } else {\n            $('#localAnswer').html(s);\n        }\n    }\n};\n\npc2.onsignalingstatechange = onsignalingstatechange;\npc2.oniceconnectionstatechange = oniceconnectionstatechange;\npc2.onicegatheringstatechange = onicegatheringstatechange;\n\npc2.onaddstream = function (e) {\n    console.log(\"Got remote stream\", e);\n    var el = new Audio();\n    el.autoplay = true;\n    attachMediaStream(el, e.stream);\n};\n\npc2.onconnection = handleOnconnection;\n\nfunction getTimestamp() {\n    var totalSec = new Date().getTime() / 1000;\n    var hours = parseInt(totalSec / 3600) % 24;\n    var minutes = parseInt(totalSec / 60) % 60;\n    var seconds = parseInt(totalSec % 60);\n\n    var result = (hours < 10 ? \"0\" + hours : hours) + \":\" +\n                 (minutes < 10 ? \"0\" + minutes : minutes) + \":\" +\n                 (seconds  < 10 ? \"0\" + seconds : seconds);\n\n    return result;\n}\n\nfunction writeToChatLog(message, message_type) {\n    document.getElementById('chatlog').innerHTML += '<p class=\\\"' + message_type + '\\\">' + \"[\" + getTimestamp() + \"] \" + message + '</p>';\n}\n\n\nfunction QRFlow(isOfferer) {\n    var cameraSelect = $('<select>')\n        .on('change', function() {\n            stopCamera();\n            startCamera();\n        });\n\n    // TODO: firefox doesn't support media stream track\n    MediaStreamTrack.getSources(function(sources) {\n        for (var i = 0; i < sources.length; i++) {\n            if (sources[i].kind === 'video') {\n                cameraSelect.append(\n                    $('<option>')\n                        .attr('value', sources[i].id)\n                        .text(sources[i].label)\n                );\n            }\n        }\n    });\n\n    var cameraCanvas = $('<canvas>')\n        .attr('id', 'qr-canvas') // this id is required for the jsqrcode lib\n        .css({\n            width: '256px'\n        });\n\n    var cameraProgress = $('<div>');\n\n    var cameraContainer = $('<div>')\n        .text(isOfferer ? 'After the other device receives our offer, use this camera to scan their answer:'\n                        : 'Use this camera to scan the offer from the other device:')\n        .append('<br>')\n        .append('Select camera:')\n        .append(cameraSelect)\n        .append('<br>')\n        .append(cameraCanvas)\n        .append(cameraProgress);\n\n    // If this is the offerer, createLocalOffer is called shortly afterwards to fill this with the qr code\n    var qrCodeContainer = $('<div>').text(isOfferer ? 'Generating offer.' : '');\n\n    var modal = $('#qrFlow');\n    if (isOfferer) {\n        // Send offer with QR code first, then get answer with camera\n        modal.find('.modal-body').append(qrCodeContainer).append(cameraContainer).append(video);\n    } else {\n        // Scan offer with camera first, then send answer with qr codes\n        modal.find('.modal-body').append(cameraContainer).append(qrCodeContainer).append(video);\n    }\n\n    // Start off hidden until video permissions are accepted and camera started\n    modal.find('.modal-body').hide();\n    modal.modal('show');\n\n    // Need a dummy <video> to attach the webcam stream to but we'll manually copy frames into cameraCanvas\n    var video = $('<video autoplay>').hide().appendTo('body');\n\n    startCamera();\n\n\n    var payloadSize = 400;\n    function encodeQRText(offset, compressedMessage) {\n        // The compressedMessage does fit in a single QR code but it's huge and hard to scan\n        // So we need to split them into smaller chunks\n        var payload = compressedMessage.substr(offset, payloadSize);\n        var qrText = ',' + offset + ',' + compressedMessage.length + ',' + payload;\n        // QR codes already have built in error detection/correction but I am still seeing errors\n        // Add a simple checksum to help with that\n        var checksum = 0;\n        for (var i = 0; i < qrText.length; i++) {\n            checksum += qrText.charCodeAt(i);\n        }\n        qrText = (checksum % 256) + qrText;\n        return qrText;\n    }\n\n    function decodeQRText(qrText) {\n        var split = qrText.split(',', 3);\n        if (split.length != 3) {\n            throw 'invalid format';\n        }\n\n        var checksum = parseInt(split[0]);\n        var offset = parseInt(split[1]);\n        var totalSize = parseInt(split[2]);\n        var payload = qrText.substr(split[0].length + 1 + split[1].length + 1 + split[2].length + 1);\n\n        // Check that parseInt succeeded\n        if (isNaN(checksum) || isNaN(offset) || isNaN(totalSize)) {\n            throw 'invalid format';\n        }\n\n        // Check checksum\n        var expectedCheckSum = 0;\n        for (var i = split[0].length; i < qrText.length; i++) {\n            expectedCheckSum += qrText.charCodeAt(i);\n        }\n        expectedCheckSum %= 256;\n        if (expectedCheckSum != checksum) {\n            throw 'invalid checksum ' + checksum + ' ' + expectedCheckSum;\n        }\n\n        // Check payload length\n        var expectedPayloadLength = Math.min(payloadSize, totalSize - offset);\n        if (payload.length != expectedPayloadLength) {\n            throw 'invalid payload length ' + payload.length + ' ' + expectedPayloadLength;\n        }\n\n        return {\n            offset: offset,\n            totalSize: totalSize,\n            payload: payload,\n        }\n    }\n\n    var sendLoop;\n    function showQRCodes(message) {\n        var compressedMessage = LZString.compressToBase64(message);\n\n        var numQRCodes = Math.ceil(compressedMessage.length / payloadSize);\n\n        var label = $('<div>').text('1 of ' + numQRCodes);\n\n        var qrCodes = $('<div>');\n        for (var offset = 0; offset < compressedMessage.length; offset += payloadSize) {\n            qrCodes.append(\n                $('<div>')\n                    .css({\n                        padding: '5px 0'\n                    })\n                    .qrcode({\n                        text: encodeQRText(offset, compressedMessage),\n                        correctLevel: 1, // QRErrorCorrectLevel.L\n                    })\n                    .hide()\n            );\n        }\n        qrCodes.children(':first').show();\n\n        // Rapidly flash a bunch of qr codes\n        var rotate = function(delta) {\n            var currVisible = qrCodes.children(':visible');\n            currVisible.hide();\n            var nextIndex = (currVisible.index() + delta + numQRCodes) % numQRCodes;\n            label.text((nextIndex + 1) + ' of ' + numQRCodes);\n            qrCodes.children(':eq(' + nextIndex + ')').show();\n        }\n        clearInterval(sendLoop);\n        sendLoop = setInterval(function() {\n            rotate(1);\n        }, 100);\n\n        qrCodeContainer\n            .text(\"Here's your \" + (isOfferer ? 'offer' : 'answer') + \". Send this by scanning with the other device's camera.\")\n            .append(label)\n            .append(qrCodes)\n            .append(\n                $('<button class=\"btn\">Previous block</button>')\n                    .on('click', function() {\n                        clearInterval(sendLoop);\n                        rotate(-1);\n                    })\n            )\n            .append(\n                $('<button class=\"btn\">Next block</button>')\n                    .css('margin-left', '50px')\n                    .on('click', function() {\n                        clearInterval(sendLoop);\n                        rotate(1);\n                    })\n            );\n    }\n\n    var blocks;\n    var blocksReceived;\n    var expectedMessageSize;\n    function receiveQRCode(s, callbackIfCompleted) {\n        console.log(s);\n\n        var message = decodeQRText(s);\n        var blockIndex = message.offset / payloadSize;\n        var numBlocks = Math.ceil(message.totalSize / payloadSize);\n\n        // First block ever received\n        if (!blocks) {\n            blocks = new Array(numBlocks);\n            blocksReceived = 0;\n            expectedMessageSize = message.totalSize;\n\n            if (isOfferer) {\n                // Since we got an answer, we know other device is not scanning our qr code anymore\n                qrCodeContainer.hide();\n            }\n\n            // Draw a progress bar to show which blocks were received\n            var progressBar = $('<div>').css({\n                position: 'relative',\n                height: '20px',\n            });\n            for (var i = 0; i < numBlocks; i++) {\n                progressBar.append(\n                    $('<div>')\n                        .addClass('progress-tick')\n                        .css({\n                            'position': 'absolute',\n                            'top': '0',\n                            'left': (i * 100 / numBlocks) + '%',\n                            'width': (100 / numBlocks) + '%',\n                            'height': '100%',\n                            'text-align': 'center',\n                        })\n                        .attr('title', i + 1)\n                        .text('Block ' + (i + 1))\n                );\n            }\n            cameraProgress\n                .text('Receiving ' + (isOfferer ? 'answer' : 'offer') + '. Blocks received:')\n                .append(progressBar);\n        } else {\n            // Check that the expected size is consistent with previous blocks\n            if (message.totalSize != expectedMessageSize) {\n                throw 'inconsistent size ' + message.totalSize + ' ' + expectedMessageSize;\n            }\n        }\n\n        // First time receiving this block\n        if (blocks[blockIndex] === undefined) {\n            blocks[blockIndex] = message.payload;\n            blocksReceived++;\n            cameraProgress.find('.progress-tick:eq(' + blockIndex + ')')\n                .css('background-color', 'black');\n\n            // If received everything, call callback\n            if (blocksReceived === numBlocks) {\n                var fullMessage = LZString.decompressFromBase64(blocks.join(''));\n                callbackIfCompleted(fullMessage);\n            }\n        }\n    }\n\n    var localMediaStream;\n    var receiveLoop;\n    function startCamera() {\n        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;\n        window.URL = window.URL || window.webkitURL;\n        navigator.getUserMedia({\n            video: {\n                optional: [{sourceId: cameraSelect.val()}]\n            }\n        }, function (stream) {\n            if (!modal.find('.modal-body').is(':visible')) {\n                modal.find('.modal-header h3').text(isOfferer ? 'Send offer / get answer' :\n                                                                'Get offer / send answer');\n                modal.find('.modal-body').show();\n            }\n\n            localMediaStream = stream;\n            video[0].src = window.URL.createObjectURL(stream);\n            video[0].onloadedmetadata = function(e) {\n                cameraCanvas[0].width = video.width();\n                cameraCanvas[0].height = video.height();\n                receiveLoop = setInterval(function() {\n                    // Draw current frame\n                    cameraCanvas[0].getContext('2d').drawImage(video[0], 0, 0);\n\n                    // Try to look for a QR code\n                    qrcode.callback = function(s) {\n                        receiveQRCode(s, function(message) {\n                            if (isOfferer) {\n                                handleJsonAnswerFromPC2(message);\n                                stopCamera();\n                                cameraContainer.hide().after(\"Received answer. If this whole thing doesn't disappear in a few seconds it probably failed to connect!\");\n                            } else {\n                                handleJsonOfferFromPC1(message);\n                                stopCamera();\n                                cameraContainer.hide().after('Received offer.<br>');\n                                qrCodeContainer.text('Generating answer.');\n                            }\n                        });\n                    }\n                    qrcode.decode();\n                }, 33);\n            }\n        }, function (e) {\n            console.log(\"getUserMediaError\", e);\n        });\n    }\n\n    function stopCamera() {\n        clearInterval(receiveLoop);\n        video[0].src = null;\n        if (localMediaStream && localMediaStream.stop) {\n            localMediaStream.stop();\n        }\n    }\n\n    function remove() {\n        clearInterval(sendLoop);\n        stopCamera();\n        modal.modal('hide');\n    }\n\n    this.showQRCodes = showQRCodes;\n    this.remove = remove;\n}",
 			"settings":
 			{
-				"buffer_size": 2242,
+				"buffer_size": 20572,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Tom/Dev/pomodoroking-server/webrtc-shim.js",
+			"settings":
+			{
+				"buffer_size": 2560,
 				"line_ending": "Windows"
 			}
 		},
@@ -392,17 +447,33 @@
 	[
 		"/C/Users/Tom/Dev/R",
 		"/C/Users/Tom/Dev/R/css",
-		"/C/Users/Tom/Dev/R/images",
 		"/C/Users/Tom/Dev/R/js",
 		"/C/Users/Tom/Dev/R/scripts"
 	],
 	"file_history":
 	[
+		"/C/Users/Tom/Dev/R/CNAME",
+		"/C/Users/Tom/Dev/pomodoroking-server/.gitignore",
+		"/C/Users/Tom/Dev/pomodoroking-app/.gitignore",
+		"/C/Users/Tom/Dev/facebook-uploader/.gitignore",
+		"/C/Users/Tom/Dev/Clipro_2.2/.gitignore",
+		"/C/Users/Tom/Dev/pomodoroking-server/index.html",
+		"/C/Users/Tom/Dev/pomodoroking-server/session.js",
+		"/C/Users/Tom/Dev/pomodoroking-server/phone.html",
+		"/C/Users/Tom/Dev/pomodoroking-server/app.js",
+		"/C/Users/Tom/Dev/pomodoroking-server/.git/config",
+		"/C/Users/Tom/Dev/facebook-uploader/app/scripts/app.js",
+		"/C/Users/Tom/Dev/R/node_modules/bs-html-injector/index.js",
+		"/C/Users/Tom/Dev/embedexploder/server.js",
+		"/C/Users/Tom/Dev/pomodoroking-server/sessionstore.json",
+		"/C/Users/Tom/Dev/pomodoroking/package.json",
+		"/C/Users/Tom/Dev/embedexploder/package.json",
+		"/C/Users/Tom/Dev/pomodoroking-server/start.js",
+		"/C/Users/Tom/Dev/pomodoroking-server/package.json",
 		"/C/Users/Tom/Dev/clipro/app/scripts/workflow.js",
 		"/C/Users/Tom/Dev/facebook-uploader/test/spec/services/debouncer.js",
 		"/C/Users/Tom/Dev/facebook-uploader/app/scripts/services/debouncer.js",
 		"/C/Users/Tom/Dev/email-analytics/_assets/devComps/js/workflow.js",
-		"/C/Users/Tom/Dev/facebook-uploader/app/scripts/app.js",
 		"/C/Users/Tom/Dev/Clipro_2.2/_assets/devComps/js/workflow.js",
 		"/C/Users/Tom/Downloads/TextCrawler.2.5.0.0.nupkg/tools/chocolateyInstall.ps1",
 		"/C/Users/Tom/Dev/Clipro_2.2/_assets/devComps/js/polling.js",
@@ -459,7 +530,6 @@
 		"/C/Users/Tom/.gitconfig",
 		"/C/Users/Tom/Dev/sbnangular/Gruntfile.js",
 		"/C/Users/Tom/AppData/Roaming/Sublime Text 3/Packages/Babel/JavaScript (Babel).tmLanguage",
-		"/C/Users/Tom/Dev/embedexploder/server.js",
 		"/C/Users/Tom/Dev/facebook-uploader/Gruntfile.js",
 		"/C/Users/Tom/Dev/clipro/Gruntfile.js",
 		"/C/Users/Tom/AppData/Roaming/Sublime Text 3/Packages/Babel/Monokai Phoenix.YAML-tmTheme",
@@ -471,7 +541,6 @@
 		"/C/Users/Tom/AppData/Local/Microsoft/Windows/INetCache/IE/N6V682AY/data.ext4.win[1].md5",
 		"/C/Users/Tom/AppData/Local/Microsoft/Windows/INetCache/IE/7RUSVPOK/logo.emmc.win[1].md5",
 		"/C/Users/Tom/AppData/Local/Microsoft/Windows/INetCache/IE/OM6G3K4D/.twrps[1].twrps",
-		"/C/Users/Tom/Dev/embedexploder/package.json",
 		"/C/Users/Tom/Dev/stereokai-player/gulpfile.js",
 		"/C/Users/Tom/Dev/stereokai-player/bower.json",
 		"/C/Users/Tom/Dev/stereokai-player/app/index.html",
@@ -510,12 +579,11 @@
 		"/C/Users/Tom/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Tom/Dropbox/Sublime Text/Packages/User/JavaScript.sublime-settings",
 		"/C/Users/Tom/Downloads/posh-monokai-master/posh-monokai-master/HKCU-Console.reg",
-		"/C/Users/Tom/Downloads/posh-monokai-master/posh-monokai-master/register-console-font.reg",
-		"/C/Users/Tom/OneDrive/Setup/Power/PowerLog/PowerLog.cpp"
+		"/C/Users/Tom/Downloads/posh-monokai-master/posh-monokai-master/register-console-font.reg"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -531,6 +599,72 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".5rem",
+			"tappable",
+			"event",
+			".sidebar",
+			"header",
+			"style=\"margin-bottom: 0\"",
+			"style=\"margin-top: 0\"",
+			"\"></",
+			"-md",
+			"col-md",
+			"top",
+			"name",
+			"\nbody > .padding {\n  display: none;\n}",
+			"header",
+			"<<i>",
+			"<h3>",
+			"h3",
+			"dia",
+			".shadow",
+			"shadow",
+			"h1",
+			"padding",
+			"h1",
+			"An independent l",
+			"an independent l",
+			"An independent l",
+			"An independent local family business, providing professional and leisure services to locals, tourists, visitors and ex-pats in Koh Samui, Thailand",
+			"img/oil5.jpg",
+			"opengraph.jpg",
+			"We believe that the rising global trends of outsourcing and information sharing are the face of the future.",
+			"Sbn Web Solutions",
+			"http://www.sbnwebsolutions.com",
+			"</p>",
+			"<p>",
+			"p",
+			"</b>",
+			"<b>",
+			"b",
+			"list-st",
+			"unstyled",
+			"header",
+			".page",
+			"rutta",
+			"18",
+			"setupDC1",
+			"\"",
+			"desc",
+			"Desc",
+			"desc",
+			"dc1",
+			"DC1",
+			"dc1",
+			"DC1",
+			"dc1",
+			"DC1",
+			"dc1",
+			"tn1",
+			"pc1",
+			"PC1",
+			"pc1",
+			"upsave",
+			"sessionId",
+			"json",
+			"sessionId",
+			"request",
+			"activedc",
 			"right",
 			"#box",
 			"100",
@@ -592,73 +726,7 @@
 			"Name",
 			"name",
 			"Name",
-			"name",
-			"Name",
-			"name",
-			"Name",
-			"name",
-			"Name",
-			"name",
-			"Name",
-			"name",
-			"Name",
-			"name",
-			"Name",
-			"name",
-			"item",
-			"property",
-			"bind",
-			"uid",
-			"7iy9",
-			"VM12971:2 ",
-			"^\\n",
-			"getResultQuery",
-			"Search_Results",
-			"return",
-			"targetScope",
-			"$locale",
-			"construc",
-			"obj[property]",
-			");\n",
-			"_name",
-			"console",
-			"['_name']",
-			"obj[property]",
-			"consol",
-			"registerMethods",
-			"prepareServices",
-			"registerob",
-			"invokelater",
-			"requiredDirective",
-			"ngrequired",
-			"unicorn",
-			"/////",
-			"///",
-			"registerObject",
-			"a",
-			"AE81FF",
-			"AE81FF0081FF",
-			"AE81FF",
-			"(?<!\\.|\\?|\\?\\s)",
-			"round-brackets",
-			"literal-string",
-			"meta",
-			"string.unquoted.label.js",
-			".key",
-			"key-value",
-			":",
-			"\\:",
-			":",
-			"property",
-			"string.",
-			"support.type",
-			"66D9EF",
-			">string",
-			"E6DB74",
-			"jsx",
-			"unmatched",
-			"outline",
-			"alt"
+			"name"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -679,7 +747,7 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -768,7 +836,7 @@
 						"translation.y": 304.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -856,7 +924,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -944,7 +1012,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -953,15 +1021,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 68,
+						"buffer_size": 1309,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58,
-								58
+								1288,
+								1302
 							]
 						],
 						"settings":
@@ -969,21 +1037,26 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -994,6 +1067,16 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -1004,39 +1087,206 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 672.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Tom/Dev/smashing-input-events/taps.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								807,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
+					"file": "/C/Users/Tom/Dev/smashing-input-events/taps.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "R.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -1120,24 +1370,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3869,
+						"buffer_size": 11183,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								287,
-								287
+								10142,
+								10135
 							]
 						],
 						"settings":
@@ -1145,61 +1395,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
@@ -1207,27 +1457,115 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3448.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "css/index.css",
+					"buffer": 8,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27440,
+						"buffer_size": 199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								24631,
-								24597
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "1st thing should be coconut oil - picture on right",
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "css/index.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29503,
+								29503
 							]
 						],
 						"settings":
@@ -1235,61 +1573,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/CSS/CSS.tmLanguage",
@@ -1297,103 +1635,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 23834.0,
+						"translation.y": 31333.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 589,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								57,
-								57
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_indent": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "scripts/start.js",
 					"semi_transient": false,
 					"settings":
@@ -1414,21 +1663,26 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -1439,6 +1693,16 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -1449,26 +1713,11 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
@@ -1476,188 +1725,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 75.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								784,
-								784
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": "@caspervonb I got you covered bro.",
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "node_modules/bs-html-injector/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6482,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								495,
-								495
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 599.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1673,8 +1744,8 @@
 						"selection":
 						[
 							[
-								376,
-								376
+								1,
+								1
 							]
 						],
 						"settings":
@@ -1682,41 +1753,31 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -1727,16 +1788,26 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"syntax": "Packages/Babel/JSON (Babel).tmLanguage",
@@ -1747,24 +1818,23 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
 					"buffer": 12,
-					"file": "src/index.html",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7111,
+						"buffer_size": 8581,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								656,
-								656
+								7498,
+								7498
 							]
 						],
 						"settings":
@@ -1772,64 +1842,243 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3052.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1024,
+								1005
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 220.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/Tom/Dev/pomodoroking-server/webrtc-shim.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2560,
+								2560
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1837,104 +2086,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "/C/Users/Tom/Dev/facebook-uploader/app/scripts/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2242,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								894,
-								894
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 569.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "/C/Users/Tom/Dev/facebook-uploader/app/scripts/services/debouncer.js",
 					"semi_transient": false,
 					"settings":
@@ -1946,8 +2102,8 @@
 						"selection":
 						[
 							[
-								37,
-								37
+								498,
+								226
 							]
 						],
 						"settings":
@@ -1955,61 +2111,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 							"editorconfig": true,
@@ -2023,7 +2179,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]

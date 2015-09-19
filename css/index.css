@@ -1329,7 +1329,7 @@ header {
   background: #000;
 
   position: fixed;
-  width: 50%;
+  width: 100%;
   z-index: 10;
   overflow: hidden;
 }
@@ -1514,22 +1514,86 @@ h2 {
   5% { opacity: 1; } 
 }
 
-.sidebar {
-  width: 320px;
+body.--sidebar-open {
+  overflow: hidden;
+}
+
+#sidebar {
   padding: 1rem 2rem;
   flex-shrink: 0;
   background: #F8FEFE;
+  height: 100vh;
 
     /* for mobile */
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 100%;
     width: 100%;
     z-index: 9000;
-    height: 100vh;
     overflow-y: scroll;
+
 }
 
+@media only screen and (min-width: 768px) {
+  #sidebar {
+    position: initial;
+    top: initial;
+    left: initial;
+    width: 320px;
+    z-index: initial;
+    overflow-y: initial;
+  }
+}
+
+#sidebar.--open {
+  transform: translateX(-100%);
+}
+
+#sb-close, #sb-open {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 140px 100px 0;
+  border-color: transparent #FF517F transparent transparent;
+  position: fixed;
+  top: 50vh;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(360deg);
+  display: block;
+  z-index: 999999999;
+  background: none;
+}
+
+#sb-open:before {
+  background-image: url('/images/hello.svg');
+  width: 40px;
+  height: 40px;
+  top: -18px;
+  left: 31px;
+}
+
+#sb-open:before, #sb-close:before {
+  content: '';
+  position: absolute;
+  background-size: cover;
+}
+
+#sb-close {
+  transform: translate(-50%, -50%) rotate(360deg) scaleX(-1);
+  left: 0%;
+}
+
+#sb-close:before {
+  background-image: url('/images/x.svg');
+  width: 30px;
+  height: 30px;
+  top: -14px;
+  left: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  display: block;
+}
 
 .dia > img {
   width: 100%;
@@ -1587,22 +1651,7 @@ a[href="#top"] {
   }
 }
 
-.sb-open {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 100px 163px 100px 0;
-  border-color: transparent #FF517F transparent transparent;
-  position: fixed;
-  top: 50vh;
-  left: 44%;
-  transform: translate(-50%, -50%) rotate(360deg);
-  display: block;
-  z-index: 999999999;
-  background: none;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
   p.--no-top-margin {
     margin-top: 0;  
   }
