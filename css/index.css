@@ -202,6 +202,7 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #0F2B56;
 }
 
 :focus {
@@ -250,6 +251,7 @@ code {
 .main {
   min-height: 100vh;
   flex-grow: 1;
+  background: #EEF3F2
 }
 
 .content {
@@ -1325,29 +1327,81 @@ header.page-section {
 
 header {
   background: #000;
-  overflow: auto;
+
+  position: fixed;
+  width: 50%;
+  z-index: 10;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: initial;
+    width: 100%;
+    z-index: initial;
+    overflow: auto;
+  }
+}
+
+body > .padding {
+  display: none;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  body > .padding {
+    display: block;
+  }
+
+  body > .padding:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 26.7708333%;
+  }
 }
 
 h1 {
   font-size: 4.2rem;
   text-align: center;
-  color: #eee;
+  color: rgba(238, 238, 238, 0);
   z-index: 10;
+  background: url('/images/cover_mobile.jpg');
+  background-size: cover;
+  margin: 0;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 { background-image: url('/images/cover_tablet.jpg'); }
+}
+
+@media only screen and (min-width: 980px) {
+  h1 { background-image: url('/images/cover.jpg'); }
+}
+
+h1 > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 26.7708333%;
 }
 
 h2 {
-  margin: 2.5rem 0;
-  font-size: 2rem;
-  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 16px 0;
+  font-size: 16px;
+  font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
-  text-align: center;
-  color: #eee;
+  line-height: 1.4rem;
+  text-align: left;
+  color: inital;
 }
-
-/*.page-section > h3 {
-  position: relative;
-  left: -11.5%;
-}*/
 
 .square {
   position: relative;
@@ -1378,22 +1432,8 @@ h2 {
   min-height: 100%;
 }
 
-.square > .shadow.--on-right:after {
-  z-index: -1; 
-  position: absolute; 
-  content: "";
-  bottom: 28px;
-  left: 10px;
-  width: 59%;
-  top: 67%;
-  max-width:300px;
-  background: rgba(0, 0, 0, 0.7); 
-  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-  transform: rotate(-3deg);
-}
-
-.square > .shadow:after {
-  z-index: -1; 
+.shadow:after {
+  z-index: 0; 
   position: absolute; 
   content: "";
   bottom: 28px;
@@ -1404,12 +1444,12 @@ h2 {
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
 }
 
-.square > .shadow.--on-left:after {
+.shadow.--on-left:after {
   left: 10px;
   transform: rotate(-3deg);
 }
 
-.square > .shadow.--on-right:after {
+.shadow.--on-right:after {
   transform: rotate(3deg);
   right: 10px;
   left: auto;
@@ -1478,8 +1518,18 @@ h2 {
   width: 320px;
   padding: 1rem 2rem;
   flex-shrink: 0;
-  background: #fff;
+  background: #F8FEFE;
+
+    /* for mobile */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    z-index: 9000;
+    height: 100vh;
+    overflow-y: scroll;
 }
+
 
 .dia > img {
   width: 100%;
@@ -1502,4 +1552,74 @@ h2 {
 
 .contact a {
   text-decoration: underline;
+}
+
+h3 {
+  position: relative;
+  z-index: 1;
+}
+
+h3 > span {
+  color: #EEF3F2;
+}
+
+i:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 36px 36px 0 0;
+  border-color: #FF517F transparent transparent transparent;
+  position: absolute;
+  z-index: -1;
+  left: -7px;
+  top: -3px;
+}
+
+a[href="#top"] {
+  float: right;
+  direction: rtl;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-section {
+    padding: 1rem 2rem;
+  }
+}
+
+.sb-open {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 163px 100px 0;
+  border-color: transparent #FF517F transparent transparent;
+  position: fixed;
+  top: 50vh;
+  left: 44%;
+  transform: translate(-50%, -50%) rotate(360deg);
+  display: block;
+  z-index: 999999999;
+  background: none;
+}
+
+@media only screen and (min-width: 768px) {
+  p.--no-top-margin {
+    margin-top: 0;  
+  }
+
+  p.--no-bottom-margin {
+    margin-bottom: 0;   
+  }
+
+  #car-rental {
+    overflow: visible; height: 1px; margin-top: -0.9rem;
+  }
+
+  #car-rental-pricing {
+    margin-bottom: 5px; margin-top: 0;
+  }
+
+  #laundry {
+    margin-bottom: 0; padding: 0 1rem;
+  }
 }
